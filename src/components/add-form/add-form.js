@@ -46,15 +46,15 @@ class AddForm extends Component {
       <div className="add-form">
         <div className="add-form-content">
           <div className="add-form-container">
-            <h4>Введите данные для новой записи</h4>
+            <h4>Please, fill the form</h4>
             { formItems }
             <div className="btn-group">
               <button type="button" className="btn btn-success"
                 onClick={() => {this.send()}}
-              >Отправить</button>
+              >Send</button>
               <button type="button" className="btn btn-danger"
                 onClick={toggleVisibility}
-              >Отмена</button>
+              >Cancel</button>
             </div>
           </div>
         </div>
