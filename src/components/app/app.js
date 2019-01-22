@@ -139,7 +139,7 @@ class App extends Component{
 
   deleteRow(id){
     // row_el.classList.add('delete-row');
-    const bool = window.confirm(`Вы действительно хотите удалить эту запись?`);
+    const bool = window.confirm(`Do you really want to delete this row?`);
     if(bool){
       this.fakeService.deleteRow(id)
       .then(() => {
@@ -175,7 +175,7 @@ class App extends Component{
           type="button"
           className="btn btn-success m-1"
           onClick={() => {this.toggleAddForm()}}
-        >Добавить запись</button>
+        >Add</button>
         { addForm }
         { loadingSpinner }
         <table className="table table-bordered table-hover table-striped">
